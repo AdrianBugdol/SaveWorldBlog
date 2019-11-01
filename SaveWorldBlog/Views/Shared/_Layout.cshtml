@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="~/css/default.css">
+    <script src="https://kit.fontawesome.com/931e4dd5bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg-img">
+        <div class="container-1">
+            <div class="navbar">
+
+                <label class="show-menu-btn" for="chk">
+                    <i class="fas fa-bars fa-2x"></i>
+                </label>
+                <input type="checkbox" id="chk">
+
+                <ul class="navbar-inner">
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="Articles">Articles</a></li>
+                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-controller="Home" asp-action="About">About</a></li>
+
+                    <li class="nav-left-content nav-create-account"><a href="#">Create Account</a></li>
+                    <li class="nav-left-content"><a href="#">Login</a></li>
+
+                    <label class="hide-menu-btn" for="chk">
+                        <i class="fas fa-times fa-2x"></i>
+                    </label>
+
+                </ul>
+            </div>
+            <div class="heading">
+                <p>A world powered by the wind, water, and sun is not only possible – it’s already happening.</p>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+</body>
+</html>

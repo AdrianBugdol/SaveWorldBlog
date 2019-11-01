@@ -1,0 +1,173 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: "Libre Baskerville";
+}
+
+.navbar {
+    background: rgb(32,32,32,0.65);
+    height: 4.5em;
+}
+
+.navbar-inner {
+    line-height: 4.5em;
+}
+
+.navbar ul {
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.navbar-inner li {
+    float: left;
+}
+
+    .navbar-inner li a {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 16px;
+        color: #ecf0f1;
+        text-decoration: none;
+    }
+
+    .navbar-inner li:hover a {
+        color: #27ae60;
+        transition: 0.4s;
+    }
+
+.bg-img {
+    background-color: #3498db;
+    background-image: url(../img/wind-power-plant.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    filter: brightness(80% );
+}
+
+.hide-menu-btn,
+.show-menu-btn {
+    color: #ecf0f1;
+    cursor: pointer;
+    position: center;
+    padding: 16px;
+    float: right;
+    display: none;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -11;
+}
+
+.logo {
+    position: relative;
+    padding: 15px;
+}
+
+    .logo a {
+        text-decoration: none;
+        color: #ecf0f1;
+        text-align: center;
+        text-transform: capitalize;
+        position: center;
+        font-size: 2em;
+    }
+
+.nav-left-content {
+    float: right !important;
+    padding-right: 15px;
+}
+
+.container-2, .container-3 {
+    padding: 60px 40px 90px 40px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.container-3 {
+    background-color: #2d3436;
+    height: 500px;
+    color: #ecf0f1;
+}
+
+.heading {
+    position: relative;
+    top: 40vh;
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    cursor: default;
+}
+
+.about {
+    position: relative;
+    top: 4em;
+    text-align: center;
+    color: #2d3436;
+    height: 200px;
+}
+
+.aboutHeading {
+    padding-bottom: 15px;
+    font-size: 2em;
+}
+
+.aboutContent {
+    font-size: 1.2em;
+}
+
+#newArticles {
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:800px) {
+    .show-menu-btn, .hide-menu-btn {
+        display: block;
+        float: right;
+    }
+
+    .nav-left-content {
+        float: none !important;
+    }
+
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .navbar-inner {
+        position: fixed;
+        z-index: 4;
+        overflow: hidden;
+        top 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #2d3436;
+        text-align: center;
+        padding: 10em 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+
+        .navbar-inner li {
+            padding: 20px;
+            display: block;
+            float: none;
+            overflow: hidden;
+        }
+
+    #chk:checked ~ .navbar-inner {
+        right: 0;
+    }
+
+    .heading {
+        font-size: 2em;
+    }
+}
